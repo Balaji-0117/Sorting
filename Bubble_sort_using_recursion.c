@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Recursive function to perform bubble sort
-void bubble_sort(int A[], int n, int i, int j) {
+void Bubble_sort(int A[], int n, int i, int j) {
     // Base case: All passes done
     if (i >= n) return;
 
@@ -16,10 +16,10 @@ void bubble_sort(int A[], int n, int i, int j) {
     }
 
     // Recursive call for the next element in the current pass
-    bubble_sort(A, n, i, j + 1);
+    Bubble_sort(A, n, i, j + 1);
 
     // Recursive call for the next pass
-    bubble_sort(A, n, i + 1, 0);
+    Bubble_sort(A, n, i + 1, 0);
 }
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
     int a[n];
     for (int i = 0; i < n; i++) scanf("%d", &a[i]);
     // Call the bubble sort function
-    bubble_sort(a, n, 0, 0);
+    Bubble_sort(a, n, 0, 0);
     // Print the sorted array
     for (int i = 0; i < n; i++) {
         printf("%d ", a[i]);
