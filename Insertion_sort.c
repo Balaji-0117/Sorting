@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to perform insertion sort
-void insertion_sort(int a[], int n) {
+void Insertion_sort(int a[], int n) {
     for (int j = 1; j < n; j++) {
         int flag = 0; // Variable to check if any shifting happened
         int temp = a[j];
@@ -25,7 +25,7 @@ int main() {
         scanf("%d", &a[i]);
     }
     // Perform insertion sort
-    insertion_sort(a, n);
+    Insertion_sort(a, n);
     // Print the sorted array
     for (int i = 0; i < n; i++) {
         printf("%d ", a[i]);
