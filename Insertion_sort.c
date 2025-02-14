@@ -6,7 +6,7 @@ void Insertion_sort(int a[], int n) {
         int flag = 0; // Variable to check if any shifting happened
         int temp = a[j];
         int i = j - 1;
-        // Shift elements of a[0..i-1], that are greater than temp, to one position ahead of their current position
+    // Shift elements of a[0..i-1], that are greater than temp, to one position ahead of their current position
         while (i >= 0 && a[i] > temp) {
             flag = 1;
             a[i + 1] = a[i];
