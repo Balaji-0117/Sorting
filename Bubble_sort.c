@@ -7,8 +7,8 @@ void Bubble_sort(int a[], int n) {
         for (int j = 1; j < n - i; j++) {
             if (a[j - 1] > a[j]) {
                 // Swap the elements
-                int temp = a[j - 1];
                 flag = 1;
+                int temp = a[j - 1];
                 a[j - 1] = a[j];
                 a[j] = temp;
             }
